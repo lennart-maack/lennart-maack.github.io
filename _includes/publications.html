@@ -1,14 +1,84 @@
 <div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% else %}
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% endif %}
+  <div class="col-md-12">
+    <h3 class="fw-bold mb-3">Publications</h3>
+
+    <div class="row_pub">
+      <img src="{{ site.baseurl }}/publications/2022-epropnp/pub.png" alt="" class="paperimage">
+      <div class="papertitle" style="margin-bottom: 4px">
+        EPro-PnP: Generalized End-to-End Probabilistic Perspective-n-Points for Monocular Object Pose Estimation
+      </div>
+      <p class="paragraph" style="margin-bottom: 4px">
+        <strong>Hansheng Chen</strong>, Pichao Wang, Fan Wang, Wei Tian, Lu Xiong, Hao Li
+        <br>
+        <em>CVPR</em>, 2022 <font color="Indigo"><strong>(Oral)</strong></font>
+      </p>
+      <p class="paragraph" style="margin-bottom: 10px">
+        We present a probabilistic PnP layer for end-to-end 6DoF pose estimation networks. The
+        layer outputs the pose distribution with differentiable probability density, capable of
+        learning the inputs (2D-3D correspondences) entirely from scratch.
+      </p>
+      <div class="btn-links" style="margin-bottom: 10px">
+        <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2203.13254" target="_blank"
+          rel="noopener">
+          arXiv
+        </a>
+        <a class="btn btn-outline-primary btn-sm" href="https://github.com/tjiiv-cprg/EPro-PnP" target="_blank"
+          rel="noopener">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="row_pub">
+      <img src="{{ site.baseurl }}/publications/2021-monorun/pub.png" alt="" class="paperimage">
+      <div class="papertitle" style="margin-bottom: 4px">
+        MonoRUn: Monocular 3D Object Detection by Reconstruction and Uncertainty Propagation
+      </div>
+      <p class="paragraph" style="margin-bottom: 4px">
+        <strong>Hansheng Chen</strong>, Yuyao Huang, Wei Tian, Zhong Gao, Lu Xiong
+        <br>
+        <em>CVPR</em>, 2021
+      </p>
+      <p class="paragraph" style="margin-bottom: 10px">
+        We present a novel 3D object detection framework based on dense 2D-3D correspondences. An uncertainty-aware
+        reprojection loss is proposed to learn the 3D coordinates without prior knowledge of the object geometry.
+      </p>
+      <div class="btn-links" style="margin-bottom: 10px">
+        <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2103.12605" target="_blank"
+          rel="noopener">
+          arXiv
+        </a>
+        <a class="btn btn-outline-primary btn-sm" href="https://github.com/tjiiv-cprg/MonoRUn" target="_blank"
+          rel="noopener">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="row_pub">
+      <img src="https://raw.githubusercontent.com/tjiiv-cprg/SPFCN-ParkingSlotDetection/master/demo/SPFCN-5s.gif" alt="" class="paperimage" style="padding-left:6%;padding-right:6%;margin-top:20px;">
+      <div class="papertitle" style="margin-bottom: 4px">
+        SPFCN: Select and Prune the Fully Convolutional Networks for Real-time Parking Slot Detection
+      </div>
+      <p class="paragraph" style="margin-bottom: 4px">
+        Zhuoping Yu, Zhong Gao, <strong>Hansheng Chen</strong>, Yuyao Huang
+        <br>
+        <em>IEEE Intelligent Vehicles Symposium (IV)</em>, 2020
+      </p>
+      <p class="paragraph" style="margin-bottom: 10px">
+        A real time parking slot detection model that runs 30 FPS on a 2.3 GHz CPU core, yielding corner localization error of 1.51±2.14 cm (std. err.) and slot detection accuracy of 98%.
+      </p>
+      <div class="btn-links" style="margin-bottom: 10px">
+        <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2003.11337" target="_blank"
+          rel="noopener">
+          arXiv
+        </a>
+        <a class="btn btn-outline-primary btn-sm" href="https://github.com/tjiiv-cprg/SPFCN-ParkingSlotDetection"
+          target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
