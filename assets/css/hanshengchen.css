@@ -1,0 +1,90 @@
+.btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 0.9;
+    border-radius: 0.3rem;
+    margin-right: 6px;
+}
+
+.btn-links .btn {
+    padding: 5px 0.5rem 5px 0.5rem;
+    line-height: 1;
+}
+
+.btn.btn-sm {
+    padding: 5px 0.4rem 5px 0.4rem;
+    font-size: 16px;
+    border-radius: 0.2rem;
+}
+
+.row_pub {
+    padding-bottom: 10px;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.papertitle {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.worktitle {
+    margin-top: .5rem;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.paperimage {
+    overflow: visible;
+    max-width: 30%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 3%;
+    padding-left: 0;
+    float: right;
+    clear: none
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-content {
+    border-width: 0px !important;
+}
+
+@media (min-width: 0px) {
+    .card-columns {
+        column-count: 3;
+        column-gap: 2%;
+    }
+}
+
+.card-columns .card {
+    margin-bottom: 3.5%;
+    display: inline-block;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 black;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
